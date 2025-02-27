@@ -5,22 +5,21 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/chatListFragment">
 
-    <fragment
-        android:id="@+id/chatListFragment"
-        android:name="com.shabelnikd.danielapichat.view.fragments.chatlist.ChatListFragment"
-        android:label="fragment_chat_list"
-        tools:layout="@layout/fragment_chat_list" >
-        <action
-            android:id="@+id/action_chatListFragment_to_chatFragment"
-            app:destination="@id/chatFragment" />
-    </fragment>
+
     <fragment
         android:id="@+id/chatFragment"
-        android:name="com.shabelnikd.danielapichat.view.fragments.chat.ChatFragment"
-        android:label="fragment_chat"
-        tools:layout="@layout/fragment_chat" >
+        android:name="com.example.messageapp.ui.fragments.chat.ChatFragment"
+        android:label="ChatFragment" >
         <argument
             android:name="chatId"
             app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatListFragment"
+        android:name="com.example.messageapp.ui.fragments.ChatListFragment"
+        android:label="ChatListFragment" >
+        <action
+            android:id="@+id/action_chatListFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
     </fragment>
 </navigation>

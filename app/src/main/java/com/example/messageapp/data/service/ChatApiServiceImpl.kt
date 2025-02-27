@@ -1,7 +1,7 @@
-package com.shabelnikd.danielapichat.model.service
+package com.example.messageapp.data.service
 
-import com.shabelnikd.danielapichat.model.models.MessagesResponse
-import com.shabelnikd.danielapichat.utils.safeApiCall
+import com.example.messageapp.data.models.MessagesResponse
+import com.example.messageapp.utils.safeApiCall
 import org.koin.core.component.KoinComponent
 import retrofit2.Response
 

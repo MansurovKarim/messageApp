@@ -1,6 +1,5 @@
-package com.example.messageapp.Adapters
+package com.example.messageapp.ui.adapters
 
-import GenericDiffUtil
 import android.graphics.Color
 import android.view.Gravity
 import android.view.LayoutInflater
@@ -9,9 +8,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.messageapp.ui.fragments.chat.ChatFragment.Companion.ME_ID
 import com.example.messageapp.databinding.ItemChatMessageBinding
-import com.shabelnikd.danielapichat.model.models.MessagesResponse
-import com.shabelnikd.danielapichat.view.fragments.chat.ChatFragment.Companion.ME_ID
+import com.example.messageapp.data.models.MessagesResponse
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 

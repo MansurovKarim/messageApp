@@ -1,10 +1,10 @@
-package com.shabelnikd.danielapichat.view.fragments.chat
+package com.example.messageapp.ui.fragments.chat
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.shabelnikd.danielapichat.model.models.MessagesResponse
+import com.example.messageapp.data.models.MessagesResponse
 
-import com.shabelnikd.danielapichat.model.service.ChatApiServiceImpl
+import com.example.messageapp.data.service.ChatApiServiceImpl
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.SharedFlow
 import kotlinx.coroutines.flow.asSharedFlow

@@ -33,7 +33,6 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
             android:elegantTextHeight="true"
-            android:fontFamily="@font/poppins_regular"
             android:includeFontPadding="false"
             android:paddingVertical="6dp"
             android:textColor="@color/white"

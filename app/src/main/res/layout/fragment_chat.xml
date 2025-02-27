@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    android:fitsSystemWindows="true"
-    tools:context=".view.fragments.chat.ChatFragment">
+    android:fitsSystemWindows="true">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvChat"
@@ -18,7 +17,6 @@
         app:stackFromEnd="true"
         tools:itemCount="5"
         tools:listitem="@layout/item_chat_message"
-
         />
 
     <LinearLayout
@@ -38,7 +36,6 @@
             android:layout_weight="1"
             android:background="@drawable/bg_with_corners"
             android:focusable="true"
-            android:fontFamily="@font/poppins_regular"
             android:hint="Cообщение"
             android:includeFontPadding="false"
             android:inputType="text"

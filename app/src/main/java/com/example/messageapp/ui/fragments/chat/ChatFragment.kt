@@ -1,4 +1,4 @@
-package com.shabelnikd.danielapichat.view.fragments.chat
+package com.example.messageapp.ui.fragments.chat
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,9 +11,9 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.messageapp.ui.adapters.MessagesAdapter
+import com.example.messageapp.databinding.FragmentChatBinding
 import com.google.android.material.snackbar.Snackbar
-import com.shabelnikd.danielapichat.databinding.FragmentChatBinding
-import com.shabelnikd.danielapichat.view.adapters.MessagesAdapter
 import kotlinx.coroutines.launch
 import kotlin.getValue
 

@@ -1,8 +1,6 @@
-package com.shabelnikd.danielapichat.model.service
+package com.example.messageapp.data.service
 
-
-import com.shabelnikd.danielapichat.model.models.MessagesResponse
-import org.koin.core.logger.MESSAGE
+import com.example.messageapp.data.models.MessagesResponse
 import retrofit2.Response
 import retrofit2.http.DELETE
 import retrofit2.http.Field
@@ -35,7 +33,6 @@ interface ChatApiService {
         @Path("messageId") messageId: Int,
         @Field("newMessage") newMessage: String
     ) : Response<MessagesResponse>
-
 
     @DELETE("chat/{chatId}/message/{messageId}")
     suspend fun deleteMessage(

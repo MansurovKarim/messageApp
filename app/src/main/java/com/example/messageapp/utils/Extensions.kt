@@ -1,4 +1,4 @@
-package com.shabelnikd.danielapichat.utils
+package com.example.messageapp.utils
 
 import android.util.Log
 import retrofit2.Response

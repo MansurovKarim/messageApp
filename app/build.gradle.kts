@@ -1,8 +1,7 @@
-
-
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("androidx.navigation.safeargs.kotlin")
     kotlin("plugin.serialization") version "2.1.10"
 }
 
@@ -38,11 +37,12 @@ android {
     }
     buildFeatures {
         viewBinding = true
-        dataBinding = true
+        buildConfig = true
     }
 }
 
 dependencies {
+
     implementation(libs.glide)
     implementation(libs.androidx.lifecycle.livedata.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)

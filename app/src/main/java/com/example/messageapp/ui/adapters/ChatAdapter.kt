@@ -1,11 +1,10 @@
-
-
+package com.example.messageapp.ui.adapters
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.shabelnikd.danielapichat.databinding.ItemChatBinding
-import com.shabelnikd.danielapichat.model.models.ChatModel
+import com.example.messageapp.databinding.ItemChatBinding
+import com.example.messageapp.data.models.ChatModel
 
 class ChatAdapter(
 ) : ListAdapter<ChatModel, ChatAdapter.ViewHolder>(GenericDiffUtil<ChatModel>()) {

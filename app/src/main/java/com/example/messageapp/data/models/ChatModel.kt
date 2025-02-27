@@ -1,4 +1,4 @@
-package com.shabelnikd.danielapichat.model.models
+package com.example.messageapp.data.models
 
 data class ChatModel(
     val chatId: Int,

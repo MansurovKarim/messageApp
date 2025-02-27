@@ -1,6 +1,6 @@
+package com.example.messageapp.ui.adapters
 
-
-import com.shabelnikd.danielapichat.model.models.MessagesResponse
+import com.example.messageapp.data.models.MessagesResponse
 
 class GenericDiffUtil<T : Any> : androidx.recyclerview.widget.DiffUtil.ItemCallback<T>() {
     override fun areItemsTheSame(oldItem: T, newItem: T): Boolean {

@@ -2,8 +2,7 @@ package com.shabelnikd.danielapichat.model.core
 
 import android.content.Context
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
-import com.shabelnikd.danielapichat.model.service.ChatApiService
-import kotlinx.serialization.ExperimentalSerializationApi
+import com.example.messageapp.data.service.ChatApiService
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
@@ -12,7 +11,7 @@ import org.koin.core.component.KoinComponent
 import retrofit2.Retrofit
 import kotlin.getValue
 
-class RetrofitClient(context: Context) : KoinComponent {
+class RetrofitClient(val context: Context) : KoinComponent {
 
     private val loggingInterceptor = HttpLoggingInterceptor().apply {
         level = HttpLoggingInterceptor.Level.BODY
@@ -31,7 +30,6 @@ class RetrofitClient(context: Context) : KoinComponent {
         allowStructuredMapKeys = true
     }
 
-    @OptIn(ExperimentalSerializationApi::class)
     val retrofitService: ChatApiService by lazy {
         Retrofit.Builder()
             .baseUrl(BASE_URL)
